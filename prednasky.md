@@ -63,3 +63,50 @@ Pozn2: ln (2^n) = n.ln(2) = theta(n)
 
 Naucit sa L'Hopitala https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule
 
+### Example
+
+O(n^2):
+
+	Prvy(pole[1..n])
+	for i ← 1 to n-2
+	  for j ← i to i+2
+	    vysl ← vysl+pole[j] 
+
+O(n^2):
+
+	Druhy(pole[1..n])
+	for i ← 1 to n
+	  for j ← i to n-i
+	    vysl ← vysl+pole[j] 
+
+theta(log(n)):
+
+	Treti(pole[1..n])
+	i ← 1
+	while i ≤ n
+	  i ← 2*i
+	  vysl ← vysl+pole[j] 
+
+O(n):
+
+	Rek_fcia(n)
+	if i = 1
+	  return 1
+	else
+	  return n*Rek_fcia(n-1) 
+
+
+
+	Rek_fcia2(n)
+	if i = 1
+	  return 1
+	else
+	  return 2*Rek_fcia2(n-1)
+
+
+
+	Rek_fcia3(n)
+	if i = 1
+	  return 1
+	else
+	  return n*Rek_fcia3(n/2)
