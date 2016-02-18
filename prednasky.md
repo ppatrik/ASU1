@@ -95,7 +95,7 @@ O(n):
 	else
 	  return n*Rek_fcia(n-1) 
 
-
+O(n):
 
 	Rek_fcia2(n)
 	if i = 1
@@ -103,7 +103,7 @@ O(n):
 	else
 	  return 2*Rek_fcia2(n-1)
 
-
+theta(log(n)):
 
 	Rek_fcia3(n)
 	if i = 1
